@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- A modal dialog containing a form -->
+   <dialog id="dialog">
+        <form method="dialog">
+            <div id="addBook">Add book</div>
+                <div class="bookDetails">
+                    <p>
+                        <label for="author">Author:</label>
+                        <input id="author" type="text" required>
+                    </p>
+                    <p>
+                        <label for="title">Title:</label>
+                        <input id="title" type="text" required>
+                    </p>
+                    <p>
+                        <label for="pages">Pages:</label>
+                        <input id="pages" type="text" required>
+                    </p>
+
+                    <p>
+                        <label for="haveread">Read Status:</label>
+                        <input id="haveread" type="checkbox">
+                    </p>
+                </div>
+            
+            <div>
+                <button id="confirmBtn" value="default">Confirm</button>
+                <button id ="close">Cancel</button>
+            </div>
+            </form>
+    </dialog>
+    <div class="tContainer">
+        
+        <div class="addbook">
+            <button class="show">Add book</button>
+        </div>
+
+        <div class="container">
+            <h1 class="display-3">Book Library</h1>
+            <table class="table table-dark table-striped" id="myTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Book UUID</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Read Status</th>
+                        <th scope="col"></th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        
+        
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
